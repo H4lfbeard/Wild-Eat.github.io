@@ -1,0 +1,108 @@
+.team  {
+    width: 60%;
+    margin: auto;
+    text-align: start;
+    
+}
+
+section.team img {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+section.team h2 {
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+}
+section.members h2 {
+    margin: 1rem 0 0 0;
+    font-size: 2rem;
+    grid-column: span 12;
+}
+
+section.members {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.members article img {
+    width: 70%;
+    padding: 1rem;
+}
+
+section.members h3 {
+    padding-top: 1rem;
+    font-family: Modak, serif;
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: lighter;
+}
+
+section.members h4 {
+    padding:0 0 1rem 0;
+    margin: 0;
+}
+
+section article hr {
+    width: 70%;
+    margin: auto;
+    color: #111;
+}
+
+section.members article p {
+    padding-bottom: 1rem;
+}
+
+
+.members article {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    border: 1px solid #111;
+}
+
+.members p {
+    padding: 1rem;
+}
+
+@media screen and (min-width : 768px) {
+ 
+    .team {
+        display : grid;
+        grid-template-columns: repeat(12, 1fr);
+        width: 85%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    section.team h2 {
+        margin: 1rem 0 0 2rem;
+    }
+    .team img {
+        grid-column: span 4;
+    }
+    .team article {
+        grid-column: span 8;
+    }
+    .team p {
+       margin-left: 2rem;
+    }
+    
+    section.members {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        text-align: center;
+        width: 85%;
+        margin: auto;
+    }
+
+    .members article {
+        grid-column: span 4;
+        border: 1px solid #111;
+        align-self: stretch;
+    }
+
+
+}
